@@ -3,8 +3,8 @@
 ## Felipe Delatorre
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
+* [submission PR](https://github.com/401-advanced-javascript-felipe/lab14-accessControl/pull/1)
+* [travis](https://github.com/401-advanced-javascript-felipe/lab14-accessControl/compare/dev)
 
 ### Setup
 #### `.env` requirements
