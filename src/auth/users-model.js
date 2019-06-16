@@ -104,7 +104,7 @@ users.methods.generateToken = function(type) {
   };
 
   let options = {};
-  if ( type !== 'key' && !! TOKEN_EXPIRE ) { 
+  if ( type !== 'key' && !! TOKEN_EXPIRE ) {
     options = { expiresIn: TOKEN_EXPIRE };
   }
 
