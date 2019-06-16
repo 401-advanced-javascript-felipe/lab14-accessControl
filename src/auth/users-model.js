@@ -58,7 +58,9 @@ users.statics.createFromOauth = function(email) {
       if( !user ) { throw new Error('User Not Found'); }
       return user;
     })
-    .catch( error => {
+    .catch( creating => {
+      creating = 'Creatin new user';
+      console.log(creating);
       let username = email;
       let password = 'none';
       return this.create({username, password, email});

@@ -13,8 +13,6 @@ const capabilities = {
   user: ['read'],
 };
 
-
-
 // To create roles visit this route once
 aclRouter.post('/role', (req, res) => {
 
@@ -66,6 +64,5 @@ aclRouter.get('/everything', auth('superuser'), (req, res) => {
   res.status(200).send('Hello from everything');
 
 });
-
 
 module.exports = aclRouter;

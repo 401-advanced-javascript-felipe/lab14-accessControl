@@ -21,7 +21,7 @@ authRouter.post('/signup', (req, res, next) => {
     .catch(next);
 });
 
-authRouter.get('/signin', auth(), (req, res, next) => {
+authRouter.get('/signin', auth(), (req, res) => {
   res.cookie('auth', req.token);
   res.send(req.token);
 });
@@ -34,7 +34,7 @@ authRouter.get('/oauth', (req,res,next) => {
     .catch(next);
 });
 
-authRouter.post('/key', auth, (req,res,next) => {
+authRouter.post('/key', auth, (req, res) => {
   let key = req.user.generateKey();
   res.status(200).send(key);
 });
