@@ -24,6 +24,7 @@ app.use(express.urlencoded({extended:true}));
 // Routes
 app.use(authRouter);
 app.use(aclRouter);
+app.use(express.static('docs'));
 
 // Catchalls
 app.use(notFound);
